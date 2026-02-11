@@ -1,0 +1,164 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #003366; /* Azul */
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-link {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.navbar .nav-link:hover {
+  color: #ffcc00;
+}
+
+.hero {
+  background-color: #0055a5; /* Azul */
+  color: white;
+  padding: 70px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 3px solid #f9f9f9;
+}
+
+.hero .hero-content {
+  max-width: 50%;
+}
+
+.hero .hero-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.section {
+  padding: 60px 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-alt {
+  background-color: #e0f7fa;
+}
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card p {
+  font-size: 1.1rem;
+}
+
+.btn-primary {
+  background-color: #003366;
+  color: white;
+  padding: 12px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0055a5;
+}
+
+.scroll-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 20px;
+  display: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-top.show {
+  display: block;
+}
+
+.nav-logo {
+  width: 70px;
+  height: auto;
+}
+
+.nav-logo-left {
+  margin-right: 15px;
+}
+
+.nav-logo-right {
+  margin-left: 15px;
+  width: 70px; /* Same size as the other logos */
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.parachute-image {
+  width: 50%; /* Ajuste de tamaño similar al de la imagen del CanSat */
+  max-width: 500px; /* Limitar el ancho máximo */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+
+
+.card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.card p {
+  font-size: 1.1rem;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.footer {
+  text-align: center; /* Centra el texto dentro del footer */
+  padding: 20px;
+  background-color: #003366; /* Puedes ajustar el color si lo necesitas */
+  color: white;
+}
+
+

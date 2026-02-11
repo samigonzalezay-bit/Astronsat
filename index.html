@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astronsat - Proyecto CanSat</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<script>
+  // Detecta el scroll y añade clase "visible" a los encabezados cuando están a la vista
+  window.addEventListener("scroll", () => {
+    const sectionHeaders = document.querySelectorAll(".section-header h2");
+    sectionHeaders.forEach((header) => {
+      const rect = header.getBoundingClientRect();
+      if (rect.top <= window.innerHeight) {
+        header.classList.add("visible");
+      }
+    });
+  });
+</script>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+  <div class="nav-left">
+    <img src="img/logoTecTepic.png" class="nav-logo" alt="Logo Tec Tepic">
+    <img src="img/tecnm.jpg" class="nav-logo nav-logo-left" alt="Logo TecNM"> <!-- Added TecNM logo -->
+    <div class="nav-title">
+      <span class="nav-brand">ASTRONSAT</span>
+      <span class="nav-subbrand">Monitoreo ambiental en tiempo real</span>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#inicio" class="nav-link">Inicio</a>
+    <a href="#resumen" class="nav-link">Resumen</a>
+    <a href="#cambios" class="nav-link">Cambios al Prototipo</a>
+    <a href="#sensores" class="nav-link">Sensores</a>
+    <a href="#estacion" class="nav-link">Estación Terrestre</a>
+    <a href="#impacto" class="nav-link">Impacto</a>
+  </nav>
+
+  <div class="nav-right">
+    <img src="img/logoA.jpeg" class="nav-logo nav-logo-right" alt="Logo Astronsat"> <!-- Added Astronsat logo -->
+  </div>
+</header>
+
+  <!-- HERO SECTION -->
+  <section id="inicio" class="hero">
+    <!-- TEXTO A LA IZQUIERDA -->
+    <div class="hero-content">
+      <h1>Astronsat</h1>
+      <p class="hero-subtitle">Proyecto CanSat para monitoreo ambiental</p>
+      <p class="hero-text">
+        Esta página describe el proyecto Astronsat, un CanSat diseñado para monitorear variables ambientales en tiempo real utilizando avanzados sensores y tecnologías como LoRa y ESP32.
+      </p>
+      <a href="#resumen" class="btn-primary">Ver detalles</a>
+    </div>
+
+    <!-- FOTO DEL CANSAT -->
+    <div class="hero-image">
+      <img src="img/f9.jpeg" alt="CanSat Astronsat" />
+    </div>
+  </section>
+
+  <!-- RESUMEN DEL PROYECTO -->
+  <section id="resumen" class="section">
+    <div class="section-header">
+      <h2>Resumen del Proyecto</h2>
+      <span class="section-label">01</span>
+    </div>
+    <div class="card">
+      <p>
+        El proyecto Astronsat tiene como objetivo el monitoreo ambiental en tiempo real mediante el uso de un CanSat. Este dispositivo recolecta datos como temperatura, humedad, presión atmosférica, calidad del aire, altitud, entre otros, y transmite esta información en tiempo real a través de LoRa. Se utiliza un diseño modular y robusto para facilitar su mantenimiento y mejora continua.
+      </p>
+    </div>
+  </section>
+
+  <!-- IMAGEN PARACAIDAS -->
+  <section class="section">
+    <div class="card">
+      <img src="img/fotoparacaidas.jpeg" alt="Paracaídas Astronsat" class="parachute-image" />
+    </div>
+  </section>
+  <!-- CAMBIOS AL PROTOTIPO -->
+  <section id="cambios" class="section">
+    <div class="section-header">
+      <h2>Cambios realizados al prototipo</h2>
+      <span class="section-label">02</span>
+    </div>
+    <div class="card">
+      <p>
+        Se han realizado modificaciones importantes al prototipo, como la integración de nuevos sensores, la reorganización de la arquitectura a tres nodos, y mejoras en el código para optimizar la transmisión de datos. Estas modificaciones mejoran la precisión de las mediciones y la fiabilidad del sistema.
+      </p>
+    </div>
+  </section>
+
+  <!-- SENSORES Y COMPONENTES -->
+  <section id="sensores" class="section section-alt">
+    <div class="section-header">
+      <h2>Sensores y componentes utilizados</h2>
+      <span class="section-label">03</span>
+    </div>
+    <div class="card">
+      <p>
+        Los principales sensores utilizados en el Astronsat incluyen el BME680 para mediciones ambientales, el SCD41 para detectar CO2, el MPU6050 para medir aceleración y orientación, y el GPS BN-880 para la geolocalización. Estos sensores trabajan en conjunto para proporcionar datos precisos que son cruciales para el análisis ambiental.
+      </p>
+    </div>
+  </section>
+
+  <!-- ESTACIÓN TERRESTRE -->
+  <section id="estacion" class="section">
+    <div class="section-header">
+      <h2>Estación Terrestre</h2>
+      <span class="section-label">04</span>
+    </div>
+    <div class="card">
+      <p>
+        La estación terrestre está compuesta por un ESP32 S3 Zero conectado a un módulo LoRa DX LR03. Este sistema recibe los datos en tiempo real desde el CanSat y los despliega en un monitor serial. Los datos incluyen variables como temperatura, humedad, presión, y ubicación GPS.
+      </p>
+      <img src="img/InterfazASTRONSAT.jpeg" alt="Interfaz de estación terrestre">
+    </div>
+  </section>
+
+  <!-- IMPACTO DEL PROYECTO -->
+  <section id="impacto" class="section section-alt">
+    <div class="section-header">
+      <h2>Impacto del Proyecto</h2>
+      <span class="section-label">05</span>
+    </div>
+    <div class="card">
+      <p>
+        El impacto de Astronsat en la comunidad es significativo, especialmente en el monitoreo ambiental y la toma de decisiones en zonas vulnerables. La capacidad de medir variables como el CO2 y la calidad del aire, y la posibilidad de transmitir estos datos a una estación terrestre, hacen que el proyecto sea un valioso recurso para el análisis ambiental en tiempo real.
+      </p>
+    </div>
+  </section>
+
+  <!-- NOMBRES DE LOS INTEGRANTES -->
+  <section class="section">
+    <div class="card">
+      <p style="text-align: center; font-size: 1.2rem;">
+        Integrantes:<br>
+        Adrian Eduardo Lopez Guevara<br>
+        Daniel Jimenez Verdin<br>
+        Saúl Miguel González Ayala<br>
+        Martha Vanesa Corona Bueno<br>
+        Cecilia Reyes Garcia<br>
+
+      </p>
+    </div>
+  </section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>Astronsat · CanSat para monitoreo ambiental</p>
+  <p>TecNM · Instituto Tecnológico de Tepic</p>
+</footer>
+
+  <!-- BOTÓN VOLVER ARRIBA -->
+  <button class="scroll-top" id="scrollTopBtn">↑</button>
+
+  <script>
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 400) {
+        scrollBtn.classList.add('show');
+      } else {
+        scrollBtn.classList.remove('show');
+      }
+    });
+    scrollBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>
